@@ -10,40 +10,43 @@ const Animation1 = () => {
     visible: { opacity: 1, scale: 1 },
   };
   return (
-    <div>
-      <motion.div
-        className="flex flex-wrap gap-5 p-5 justify-center items-center size-64 bg-indigo-500 rounded-lg mb-10"
-        variants={parent}
-        initial="hidden"
-        animate="visible"
-        transition={{
-          //   type: "spring",
-          //   repeat: Infinity,
-          //   repeatType: "reverse",
-          ease: "easeInOut",
-          duration: 2,
-          delayChildren: 1, // Renders children after a sec of rendering parent.
-          staggerChildren: 1, // Renders every child chronologically after 1 sec of previous child
-        }}
-      >
+    <>
+      <h2 className="text-4xl mb-5">Understanding of Parent Child</h2>
+      <div>
         <motion.div
-          variants={child}
-          className="size-20 bg-cyan-500"
-        ></motion.div>
-        <motion.div
-          variants={child}
-          className="size-20 bg-cyan-500"
-        ></motion.div>
-        <motion.div
-          variants={child}
-          className="size-20 bg-cyan-500"
-        ></motion.div>
-        <motion.div
-          variants={child}
-          className="size-20 bg-cyan-500"
-        ></motion.div>
-      </motion.div>
-    </div>
+          className="flex flex-wrap gap-5 p-5 justify-center items-center size-64 bg-indigo-500 rounded-lg mb-10"
+          variants={parent}
+          initial="hidden"
+          animate="visible"
+          transition={{
+            //   type: "spring",
+            //   repeat: Infinity,
+            //   repeatType: "reverse",
+            ease: "easeInOut",
+            duration: 2,
+            delayChildren: 1, // Renders children after a sec of rendering parent.
+            staggerChildren: 1, // Renders every child chronologically after 1 sec of previous child
+          }}
+        >
+          <motion.div
+            variants={child}
+            className="size-20 bg-cyan-500"
+          ></motion.div>
+          <motion.div
+            variants={child}
+            className="size-20 bg-cyan-500"
+          ></motion.div>
+          <motion.div
+            variants={child}
+            className="size-20 bg-cyan-500"
+          ></motion.div>
+          <motion.div
+            variants={child}
+            className="size-20 bg-cyan-500"
+          ></motion.div>
+        </motion.div>
+      </div>
+    </>
   );
 };
 

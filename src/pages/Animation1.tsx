@@ -11,7 +11,8 @@ const Animation1 = () => {
   };
   return (
     <>
-      <h2 className="text-4xl mb-5">Understanding of Parent Child</h2>
+      <h2 className="text-4xl mb-2">Understanding of Parent Child</h2>
+      <p className="flex justify-center text-sm mb-2">(Refresh the page)</p>
       <div>
         <motion.div
           className="flex flex-wrap gap-5 p-5 justify-center items-center size-64 bg-indigo-500 rounded-lg mb-10"

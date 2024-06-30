@@ -14,13 +14,17 @@ const Animation6 = () => {
   };
   return (
     <>
-      <h2 className="text-4xl mb-5">Application of useAnimate</h2>
+      <h2 className="text-4xl mb-2">Application of useAnimate</h2>
       <div className="border cursor-pointer border-red-500 flex flex-col items-center justify-center size-[400px] mb-10">
         <div
           ref={scope}
           onClick={handleClick}
           className="size-40 bg-indigo-500 rounded-lg"
-        ></div>
+        >
+          <p className="flex justify-center items-center h-full text-white">
+            Click me
+          </p>
+        </div>
       </div>
     </>
   );

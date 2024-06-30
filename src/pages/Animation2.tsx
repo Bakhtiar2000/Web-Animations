@@ -6,8 +6,8 @@ const Animation2 = () => {
     hidden: { x: 0, y: 0, opacity: 0 }, //scale: 0.9,
     visible: {
       opacity: 1,
-      x: [0, 300, -300, 0], // Keyframe
-      y: [0, 300, -300, 0],
+      x: [0, 300, 0, -300, 0], // Keyframe
+      // y: [0, 300, -300, 0],
       rotate: [0, 90, 180, 270], // degrees keyframe
       scale: 1,
       transition: {
@@ -41,7 +41,8 @@ const Animation2 = () => {
 
   return (
     <>
-      <h2 className="text-4xl mb-5">Understanding Drag Motion and Keyframes</h2>
+      <h2 className="text-4xl mb-2">Understanding Drag Motion and Keyframes</h2>
+      <p className="flex justify-center text-sm mb-2">(Drag the box)</p>
       <div
         ref={parentRef}
         className="border border-red-500 flex items-center justify-center w-60 h-60 mb-10"

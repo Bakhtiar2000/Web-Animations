@@ -7,22 +7,25 @@ const Animation3 = () => {
   const [toggle, setToggle] = useState(false);
   const handleToggle = () => {
     setToggle(!toggle);
-    !toggle ? controls.start({ x: 200 }) : controls.start({ x: -200 });
+    !toggle ? controls.start({ x: 120 }) : controls.start({ x: -120 });
   };
 
   useEffect(() => {
     controls.start((i) => ({
-      x: i * i == 1 ? -100 : i == 2 ? 0 : 100,
+      x: i * i == 1 ? -100 : i == 2 ? -50 : -20,
       transition: { delay: i * 1 },
     })); // On first render
   }, []);
   return (
     <>
-      <h2 className="text-4xl mb-5">Application of useAnimationControls</h2>
+      <h2 className="text-4xl mb-2">Application of useAnimationControls</h2>
+      <p className="flex justify-center text-sm mb-2">
+        (Refresh the page and keep the cursor away from the red box)
+      </p>
       <div
-        onMouseEnter={() => controls.stop()}
-        onMouseLeave={() => controls.start({ x: 0, transition: { delay: 1 } })}
-        className="border border-red-500 flex flex-col items-center justify-center size-[600px] mb-10"
+        onMouseEnter={() => controls.stop()} // stops animation when mouse enters
+        onMouseLeave={() => controls.start({ x: 0, transition: { delay: 1 } })} // returns the boxes into x:0 position after a sec of mouse leaving
+        className="border border-red-500 flex flex-col items-center justify-center size-96 mb-10"
       >
         <div className="flex items-center justify-center gap-5">
           <button

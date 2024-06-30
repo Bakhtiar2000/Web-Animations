@@ -12,13 +12,17 @@ const Animation5 = () => {
   //   }, []);
   return (
     <>
-      <h2 className="text-4xl mb-5">Application of UseInView</h2>
+      <h2 className="text-4xl mb-2">Application of UseInView</h2>
+      <p className="flex justify-center text-sm mb-2">
+        (Scroll up to another section and refresh and then slowly scroll down
+        here)
+      </p>
       <div className="border cursor-pointer border-red-500 flex flex-col items-center justify-center size-[400px] mb-10">
         <motion.div
           ref={ref}
           animate={
             inView
-              ? { opacity: 1, x: 0, transition: { delay: 1 } }
+              ? { opacity: 1, x: 0, transition: { delay: 1.5 } }
               : { opacity: 0, x: -500 }
           }
           className="size-40 bg-indigo-500 rounded-lg"

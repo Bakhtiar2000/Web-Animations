@@ -18,7 +18,11 @@ const Animation4 = () => {
           animate={animate}
           onTap={() => cycle()}
           className="size-40 bg-indigo-500 rounded-lg"
-        ></motion.div>
+        >
+          <p className="flex justify-center items-center text-xl h-full">
+            Tap me
+          </p>
+        </motion.div>
       </div>
     </>
   );

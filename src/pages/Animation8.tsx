@@ -22,7 +22,11 @@ const Assignment8 = () => {
           dragConstraints={{ left: 0, right: 0 }}
           dragSnapToOrigin
           className="size-40 bg-indigo-500 rounded-lg cursor-pointer"
-        ></motion.div>
+        >
+          <p className="flex justify-center items-center h-full text-white">
+            Drag me
+          </p>
+        </motion.div>
       </div>
     </>
   );

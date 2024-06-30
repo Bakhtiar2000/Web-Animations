@@ -6,6 +6,7 @@ import Animation1 from "./pages/Animation1";
 import Animation5 from "./pages/Animation5";
 import Animation6 from "./pages/Animation6";
 import Animation7 from "./pages/Animation7";
+import Animation8 from "./pages/Animation8";
 
 function App() {
   return (
@@ -21,7 +22,8 @@ function App() {
         {/* <div className="h-[200vh] w-full bg-red-500"> </div>
         <Animation5 /> */}
         {/* <Animation6 /> */}
-        <Animation7 />
+        {/* <Animation7 /> */}
+        <Animation8 />
       </div>
       <div></div>
     </>

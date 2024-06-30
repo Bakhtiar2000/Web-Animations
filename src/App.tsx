@@ -1,5 +1,6 @@
 import Animation2 from "./Animation2";
 import Animation3 from "./Animation3";
+import Animation4 from "./Animation4";
 import "./App.css";
 import Animation1 from "./pages/Animation1";
 
@@ -12,7 +13,8 @@ function App() {
         <Card /> */}
         {/* <Animation1 /> */}
         {/* <Animation2 /> */}
-        <Animation3 />
+        {/* <Animation3 /> */}
+        <Animation4 />
       </div>
       <div></div>
     </>

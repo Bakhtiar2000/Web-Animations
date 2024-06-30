@@ -1,5 +1,7 @@
+import Animation2 from "./Animation2";
+import Animation3 from "./Animation3";
 import "./App.css";
-import Temp from "./pages/Temp";
+import Animation1 from "./pages/Animation1";
 
 function App() {
   return (
@@ -8,7 +10,9 @@ function App() {
         {/* <Bounce />
         <Stagger />
         <Card /> */}
-        <Temp />
+        {/* <Animation1 /> */}
+        {/* <Animation2 /> */}
+        <Animation3 />
       </div>
       <div></div>
     </>
